@@ -31,7 +31,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ className }) => {
       <button 
         className={cn(
           "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2",
-          "w-16 h-16 bg-white/90 rounded-full flex items-center justify-center",
+          "w-12 h-12 md:w-16 md:h-16 bg-white/90 rounded-full flex items-center justify-center",
           "shadow-elevation transition-all duration-300",
           isHovering ? "scale-110" : "scale-100"
         )}
@@ -39,8 +39,8 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ className }) => {
       >
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
+          width="20" 
+          height="20" 
           viewBox="0 0 24 24" 
           fill="none" 
           stroke="currentColor" 
@@ -53,17 +53,17 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ className }) => {
         </svg>
       </button>
       
-      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4 text-white">
-        <div className="text-sm font-medium">12:45</div>
+      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-2 md:p-4 text-white">
+        <div className="text-xs md:text-sm font-medium">12:45</div>
         <div className="flex items-center space-x-2">
           <button 
-            className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+            className="p-1.5 md:p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
             aria-label="Toggle caption"
           >
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
-              width="16" 
-              height="16" 
+              width="14" 
+              height="14" 
               viewBox="0 0 24 24" 
               fill="none" 
               stroke="currentColor" 
@@ -76,13 +76,13 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ className }) => {
             </svg>
           </button>
           <button 
-            className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+            className="p-1.5 md:p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
             aria-label="Toggle fullscreen"
           >
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
-              width="16" 
-              height="16" 
+              width="14" 
+              height="14" 
               viewBox="0 0 24 24" 
               fill="none" 
               stroke="currentColor" 

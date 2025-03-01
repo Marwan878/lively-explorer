@@ -10,10 +10,10 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, showBreadcrumbs = true }) => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="page-container py-6">
+      <div className="page-container py-4 md:py-6">
         {showBreadcrumbs && (
-          <nav aria-label="Breadcrumb" className="mb-6 fade-in">
-            <ol className="flex items-center space-x-2 text-sm text-muted-foreground">
+          <nav aria-label="Breadcrumb" className="mb-4 md:mb-6 fade-in overflow-x-auto whitespace-nowrap pb-2">
+            <ol className="flex items-center space-x-2 text-xs md:text-sm text-muted-foreground">
               <li>
                 <Link to="/" className="hover:text-foreground transition-colors">
                   Home
